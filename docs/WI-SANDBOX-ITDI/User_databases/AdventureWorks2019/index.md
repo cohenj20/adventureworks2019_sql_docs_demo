@@ -12,7 +12,6 @@ AdventureWorks 2016 Sample OLTP Database
 
 ## <a name="#objecttypes"></a>Object Types
 
-* ![Tables](../../../Images/Table.png) [Tables](Tables/Tables.md)
 * ![Views](../../../Images/View.png) [Views](Views/Views.md)
 
 
@@ -111,5 +110,5 @@ AdventureWorks 2016 Sample OLTP Database
 
 ###### Copyright 2024 - All Rights Reserved
 
-###### Created: Thursday, July 11, 2024 1:50:21 PM
+###### Created: Thursday, July 11, 2024 2:43:31 PM
 
