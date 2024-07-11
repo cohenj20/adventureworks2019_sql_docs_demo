@@ -10,7 +10,7 @@
 
 | Name | Description |
 |---|---|
-| [HumanResources.vEmployee](HumanResources_vEmployee.md) | _Employee names and addresses._ |
+| [HumanResources.vEmployee](HumanResources_vEmployee.md) | _Employee names and addresses. Only active employees._ |
 
 
 ---
@@ -19,5 +19,5 @@
 
 ###### Copyright 2024 - All Rights Reserved
 
-###### Created: Thursday, July 11, 2024 10:33:41 AM
+###### Created: Thursday, July 11, 2024 1:50:21 PM
 
