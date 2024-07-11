@@ -8,7 +8,7 @@
 
 ## <a name="#description"></a>MS_Description
 
-Employee names and addresses. Only active employees.
+Employee names and addresses.
 
 ## <a name="#properties"></a>Properties
 
@@ -92,7 +92,7 @@ FROM [HumanResources].[Employee] e
     LEFT OUTER JOIN [Person].[EmailAddress] ea
     ON p.[BusinessEntityID] = ea.[BusinessEntityID];
 GO
-EXEC sp_addextendedproperty N'MS_Description', N'Employee names and addresses. Only active employees.', 'SCHEMA', N'HumanResources', 'VIEW', N'vEmployee', NULL, NULL
+EXEC sp_addextendedproperty N'MS_Description', N'Employee names and addresses.', 'SCHEMA', N'HumanResources', 'VIEW', N'vEmployee', NULL, NULL
 GO
 EXEC sp_addextendedproperty N'MS_Description', N'Semi structured additional contact info.', 'SCHEMA', N'HumanResources', 'VIEW', N'vEmployee', 'COLUMN', N'AdditionalContactInfo'
 GO
@@ -158,5 +158,5 @@ GO
 
 ###### Copyright 2024 - All Rights Reserved
 
-###### Created: Thursday, July 11, 2024 9:46:08 AM
+###### Created: Thursday, July 11, 2024 10:19:05 AM
 
