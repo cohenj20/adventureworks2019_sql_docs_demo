@@ -138,15 +138,15 @@ GO
 
 ## <a name="#uses"></a>Uses
 
+* [[Person].[BusinessEntityAddress]](../Tables/Person_BusinessEntityAddress.md)
+* [[Person].[CountryRegion]](../Tables/Person_CountryRegion.md)
+* [[Person].[EmailAddress]](../Tables/Person_EmailAddress.md)
 * [[Person].[Person]](../Tables/Person_Person.md)
 * [dbo].[Name]
 * [dbo].[Phone]
 * [HumanResources]
 * [HumanResources].[Employee]
 * [Person].[Address]
-* [Person].[BusinessEntityAddress]
-* [Person].[CountryRegion]
-* [Person].[EmailAddress]
 * [Person].[PersonPhone]
 * [Person].[PhoneNumberType]
 * [Person].[StateProvince]
@@ -158,5 +158,5 @@ GO
 
 ###### Copyright 2024 - All Rights Reserved
 
-###### Created: Thursday, July 11, 2024 10:19:05 AM
+###### Created: Thursday, July 11, 2024 10:33:41 AM
 

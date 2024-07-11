@@ -82,7 +82,7 @@ Human beings involved with AdventureWorks: employees, customer contacts, and ven
 
 | Name | Columns | Description |
 |---|---|---|
-| FK_Person_BusinessEntity_BusinessEntityID | BusinessEntityID->[Person].[BusinessEntity].[BusinessEntityID] | _Foreign key constraint referencing BusinessEntity.BusinessEntityID._ |
+| FK_Person_BusinessEntity_BusinessEntityID | BusinessEntityID->[[Person].[BusinessEntity].[BusinessEntityID]](Person_BusinessEntity.md) | _Foreign key constraint referencing BusinessEntity.BusinessEntityID._ |
 
 
 ---
@@ -244,7 +244,7 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-* [Person].[BusinessEntity]
+* [[Person].[BusinessEntity]](Person_BusinessEntity.md)
 * [dbo].[Name]
 * [dbo].[NameStyle]
 * [Person]
@@ -257,9 +257,9 @@ GO
 ## <a name="#usedby"></a>Used By
 
 * [HumanResources].[Employee]
-* [Person].[BusinessEntityContact]
-* [Person].[EmailAddress]
-* [Person].[Password]
+* [[Person].[BusinessEntityContact]](Person_BusinessEntityContact.md)
+* [[Person].[EmailAddress]](Person_EmailAddress.md)
+* [[Person].[Password]](Person_Password.md)
 * [Person].[PersonPhone]
 * [Sales].[Customer]
 * [Sales].[PersonCreditCard]
@@ -284,5 +284,5 @@ GO
 
 ###### Copyright 2024 - All Rights Reserved
 
-###### Created: Thursday, July 11, 2024 10:19:05 AM
+###### Created: Thursday, July 11, 2024 10:33:41 AM
 
