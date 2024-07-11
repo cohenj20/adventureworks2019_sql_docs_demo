@@ -1,10 +1,10 @@
-site_name: Data Infrastructure
+site_name: SHU IT Data Dictionary
 
 # Theme Configuration 
 
 theme:
   name: material
-  logo: assets/SHU_PowerBI_Logo.png
+  logo: Images/SHU_PowerBI_Logo.png
   icon:
     edit: material/pencil-box-multiple
     view: material/file-eye
