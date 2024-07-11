@@ -28,7 +28,7 @@ Employee names and addresses. Only active employees.
 | Name | Data Type | Max Length (Bytes) | Description |
 |---|---|---|---|
 | BusinessEntityID | int | 4 | _The unique identifier for a business entity._ |
-| Title | nvarchar(8) | 16 | _The title for a employee. ['Mr.', 'Mrs.', 'Sr.', 'Jr.', 'Sra.']_ |
+| Title | nvarchar(8) | 16 | _The title for a employee. Accepted values: ['Mr.', 'Mrs.', 'Sr.', 'Jr.', 'Sra.']_ |
 | FirstName | [dbo].[Name] | 100 | _The employee's first name._ |
 | MiddleName | [dbo].[Name] | 100 | _The employee's middle name._ |
 | LastName | [dbo].[Name] | 100 | _The employee's middle name._ |
@@ -128,7 +128,7 @@ EXEC sp_addextendedproperty N'MS_Description', N'State of employee.', 'SCHEMA', 
 GO
 EXEC sp_addextendedproperty N'MS_Description', N'The suffix for a employee.', 'SCHEMA', N'HumanResources', 'VIEW', N'vEmployee', 'COLUMN', N'Suffix'
 GO
-EXEC sp_addextendedproperty N'MS_Description', N'The title for a employee. [''Mr.'', ''Mrs.'', ''Sr.'', ''Jr.'', ''Sra.'']', 'SCHEMA', N'HumanResources', 'VIEW', N'vEmployee', 'COLUMN', N'Title'
+EXEC sp_addextendedproperty N'MS_Description', N'The title for a employee. Accepted values: [''Mr.'', ''Mrs.'', ''Sr.'', ''Jr.'', ''Sra.'']', 'SCHEMA', N'HumanResources', 'VIEW', N'vEmployee', 'COLUMN', N'Title'
 GO
 
 ```
@@ -138,15 +138,15 @@ GO
 
 ## <a name="#uses"></a>Uses
 
-* [[Person].[BusinessEntityAddress]](../Tables/Person_BusinessEntityAddress.md)
-* [[Person].[CountryRegion]](../Tables/Person_CountryRegion.md)
-* [[Person].[EmailAddress]](../Tables/Person_EmailAddress.md)
-* [[Person].[Person]](../Tables/Person_Person.md)
 * [dbo].[Name]
 * [dbo].[Phone]
 * [HumanResources]
 * [HumanResources].[Employee]
 * [Person].[Address]
+* [Person].[BusinessEntityAddress]
+* [Person].[CountryRegion]
+* [Person].[EmailAddress]
+* [Person].[Person]
 * [Person].[PersonPhone]
 * [Person].[PhoneNumberType]
 * [Person].[StateProvince]
@@ -158,5 +158,5 @@ GO
 
 ###### Copyright 2024 - All Rights Reserved
 
-###### Created: Thursday, July 11, 2024 1:50:21 PM
+###### Created: Thursday, July 11, 2024 2:43:31 PM
 
