@@ -19,7 +19,15 @@ jobs:
         with:
           python-version: 3.x
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
+
+      - name: Replace root index.md
+      - run: |
+          cd docs
+          rm index.md
+          cp ../deployment_files/index.md .
+
       - uses: actions/cache@v4
+      - name: Install deps and deploy mkdocs server
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
