@@ -26,8 +26,8 @@ jobs:
           rm index.md
           cp ../deployment_files/index.md .
 
-      - uses: actions/cache@v4
       - name: Install deps and deploy mkdocs server
+      - uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
