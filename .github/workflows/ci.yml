@@ -21,17 +21,17 @@ jobs:
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV 
 
       - name: Replace root index.md
-      - run: |
+        run: |
           cd docs
           rm index.md
           cp ../deployment_files/index.md .
 
       - name: Install deps and deploy mkdocs server
-      - uses: actions/cache@v4
+        uses: actions/cache@v4
         with:
           key: mkdocs-material-${{ env.cache_id }}
           path: .cache
           restore-keys: |
             mkdocs-material-
-      - run: pip install -r "requirements.txt"
-      - run: mkdocs gh-deploy --force
+        run: pip install -r "requirements.txt"
+        run: mkdocs gh-deploy --force
